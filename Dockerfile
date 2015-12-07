@@ -54,5 +54,5 @@ USER $SOLR_USER
 CMD consul-template \
     -log-level debug \
     -consul $CONSUL \
-    -template "$CT_FILE:$SOLR_CONF_FILE:/opt/solr/bin/solr restart $MESOS_CONTAINER_NAME &"
+    -template "$CT_FILE:$SOLR_CONF_FILE:/opt/solr/bin/solr restart &"
 #    -wait 90s
